@@ -1,0 +1,149 @@
+.main .addSalesCon{
+    background: #4a24318a;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100vw;
+    max-width: 1000px;
+    padding: 1rem;
+    z-index: 10000000;
+    gap: 1rem;
+    overflow-x: auto;
+}
+.main .addSalesCon .addSalesForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main .addSalesCon .addSalesForm .productSales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.main .addSalesCon .addSalesForm .productSales >label,
+.main .addSalesCon .addSalesForm >label{
+    text-align: center;
+    font-size: 1.3rem;
+    color: #fff;
+}
+.main .addSalesCon .addSalesForm .productSales >input,
+.main .addSalesCon .addSalesForm >input{
+    font-size: 1.4rem;
+    padding: .3rem 0;
+    outline: none;
+}
+.main .addSalesCon .addSalesForm .priceSale,
+.main .addSalesCon .addSalesForm .quantitySale{
+    max-width: 5rem;
+}
+
+.main .addSalesCon #select{
+    outline: none;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.main .addSalesCon .nameSale{
+    margin-bottom: 2rem;
+}
+.main .addSalesCon >button{
+    padding: .5rem 0;
+    max-width: 100px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+
+
+
+.main .addsales{
+    position: absolute;
+    top: 6rem;
+    right: 5rem;
+}
+.main .addsales >button{
+    cursor: pointer;
+    padding: .7rem 1.5rem;
+    border: 0;
+    border-radius: .5rem;
+    font-size: 1.1rem;
+    background: #fff;
+    color: #000;
+}
+.main .addsales >button:hover{
+    opacity: .7;
+}
+
+
+/* sales con css */
+.main .salesContent{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   gap: 1rem;
+   height: 100%;
+   width: 100%;
+   max-width: 800px;
+   margin: 0 auto;
+   padding-top: 9rem;
+}
+
+
+
+/* sales list css */
+.main .salesList{
+    background: #4a24318a;
+    color: #fff;
+    width: 100%;
+    padding: .3rem .2rem;
+}
+
+/* sale info css */
+.main .salesList .salesInfo{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #fff;
+}
+
+/* sales Product css */
+.main .salesList .salesProduct{
+border-bottom: 1px solid #fff;
+padding-bottom: .3rem;
+display: flex;
+justify-content: space-between;
+}
+
+.main .salesList .salesProduct .action {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .3rem
+}
+
+.main .salesList .salesProduct .action >button{
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 5px;
+    outline: none;
+    border: 0;
+    background: #fff;
+    color: #000;
+}
+.main .salesList .salesProduct .action >button:hover{
+    opacity: .8;
+}
+    
+
+
+
+
+
+
+
+

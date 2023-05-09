@@ -1,0 +1,107 @@
+.main .homeContent{
+	position: absolute;
+	top:50%;
+	left:60%;
+	transform: translate(-50%,-50%);
+	height: 35rem;
+	width: 55rem;
+	display: grid;
+	place-items: center;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	margin-top: .8rem;
+	padding-bottom: 3rem;
+	gap: 1rem;
+}
+.main .homeContent div{
+	background: #4a2431e0;
+	width: 100%;
+	height: 100%;
+	font-size: 2.5rem;
+	text-align: center;
+	transition: .6s ease;
+	/* border-radius: 50% .5rem .5rem.5rem;	 */
+}
+.main .homeContent div a{
+	text-decoration: none;
+	color: #fff;
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+	padding: 1.4rem 0;
+}
+
+
+/* media */
+@media screen and (min-width:1500px){
+
+	/* new homeContent position */
+	.main .homeContent{
+		left:50%;
+	}
+}
+
+
+/* media for new homeContent position below 1180px width */
+@media screen and (max-width:1180px){
+
+	/* new homeContent position */
+	.main .homeContent{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+		width: 35rem;
+	}
+	/* new div height and width */
+	.main .homeContent div{
+		width: 80%;
+		height: 100%;	
+	}
+}
+
+@media screen and (max-width:850px){
+	/* new size and position */
+	.main .homeContent{
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(8, 8rem);
+	width: 25rem;
+	height: 60rem;
+	margin-bottom: 10rem;
+	left: 67%;
+	margin-top: 5rem;
+}
+
+/* new div height */
+.main .homeContent div{
+	width: 50%;
+	font-size: 2rem;
+}
+
+
+
+/* new main height */
+.main{
+	min-height: 1100px;
+}
+
+/* new sidebar position */
+.main .sidebar ul{
+	margin-top: -15rem;
+}
+
+}
+
+
+/* media for new position of homeContent */
+@media screen and (max-width: 500px){
+	/* new size and position */
+	.main .homeContent{
+		left:50%;
+		margin-top: 1.5rem;
+	}
+	.main .homeContent div{
+		left:50%;
+	}
+}
+

@@ -1,0 +1,251 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: arial;
+}
+body{
+	background: #EED6D3;
+}
+.main{
+	min-width: 260px;
+	min-height: 570px;
+	position: relative;
+	overflow: hidden
+}
+.main strong{
+	font-size: 3rem;
+	background: #EED6D3;
+	height: 5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 500;
+	max-width: 1500px;
+	text-align: center;
+	margin: 0 auto;
+}
+.main .login{
+	height: 11rem;
+	width: 100%;
+	display: flex;
+	padding: 12rem 0;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: .5rem;
+	max-width: 350px;
+	margin: 0 auto;
+	position: absolute;
+	top:60%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	transition: .2s linear;
+}
+.main .login:hover{
+	box-shadow: inset 0 0 5px #67595E; 
+}
+.main .login >h1{
+	font-size: 2rem;
+	font-weight: 400;
+	margin-bottom: .5rem;
+}
+.main .login input[name=loginUsername],input[name=loginPassword]{
+	border: 0;
+	font-size: 1.3rem;
+	text-align: center;
+	padding: .3rem 0;
+	outline: none;
+	width: 80%;
+	border-radius: 10px;
+	color: #67595E;
+}
+
+/* eye */
+.main .login .eyeCon{
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.main .login .eyeCon #eye{
+	position: absolute;
+	top: 50%;
+	right: 13%;
+	cursor: pointer;
+	transform: translateY(-50%);
+
+}
+
+
+.main .login .loginSubmit{
+	margin-top: 1rem;
+}
+.main .login .loginButton,.loginSubmit{
+	padding: .3rem 1rem;
+	cursor: pointer;
+	font-size: 1.2rem;
+	transition: .3s;
+	border: 0;
+	font-size: 1.3rem;
+	width: 50%;
+	background: #67595E;
+	color: #fff;
+}
+.main .login .loginSubmit:hover,.loginButton:hover{
+	border-radius: 1rem 0 1rem 0;
+	font-size: 1.3rem;
+}
+.main .login .loginButton:hover{
+	border-radius: 0 1rem 0 1rem;
+}
+.main .login small{
+	margin-top: 2rem;
+	font-size: 1.1rem;
+}
+
+
+
+
+.main marquee{
+	font-size: 1.1rem;
+	font-weight: 400;
+	font-family: monospace;
+	text-transform: uppercase;
+	margin-top: 1rem;
+	background: #67595E;
+	color: #fff;
+	padding: .6rem 0;
+}
+
+
+
+
+/* register style */
+.main .register{
+	height: 15rem;
+	min-height: 21rem;
+	position: absolute;
+	top:60%;
+	transform: translate(-50%,-50%);
+	display: grid;
+	grid-template-areas: 
+	"text text"
+	"err err"
+	"pName uName"
+	"pass secKey"
+	"btn btn"
+	"btn2 .";
+	column-gap: 2rem;
+	row-gap: 1rem;
+	opacity: 0;
+	transition: .5s linear;
+}
+.main .register h1{
+	grid-area: text;
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 400;
+}
+.main .register .registerError{
+	grid-area: err;
+}
+.main .register .registerProfileName{
+	grid-area: pName;
+}
+.main .register .registerUsername{
+	grid-area: uName;
+}
+.main .register .registerPassword{
+	grid-area: pass;
+}
+.main .register .registerSecretKey{
+	grid-area: secKey;
+}
+.main .register .registerSubmit{
+	grid-area: btn;
+	font-size: 1.5rem;
+	cursor: pointer;
+	background: #67595E;
+	color: #fff;
+	border-radius: 10px;
+	transition: .5s;
+}
+.main .register .loginShow{
+	grid-area: btn2;
+	cursor: pointer;
+}
+.main .register .registerSubmit:hover{
+	background: #EED6D3;
+	color: #000;
+}
+.main .register input[type=button]{
+	border-radius: 10px;
+	font-size: 1.5rem;
+}
+/* all input */
+.main .register .registerProfileName,
+.main .register .registerUsername,
+.main .register .registerPassword,
+.main .register .registerSecretKey{
+	border: 0;
+	font-size: 1.3rem;
+	text-align: center;
+	padding: .3rem 0;
+	outline: none;
+	border-radius: 10px;
+	color: #67595E;
+	margin: 0 auto;
+}
+
+
+
+
+
+/* media for strong */
+@media screen and (max-width: 630px){
+
+		/* strong decrease font-size */
+		.main strong{
+	font-size: 1.6rem;
+	word-break: break-word;
+}
+
+
+}
+
+
+/* media for register */
+@media screen and (max-width: 580px){
+	.main .register{
+	grid-template-areas: 
+	"text"
+	"err"
+	"pName" 
+	"uName"
+	"pass" 
+	"secKey"
+	"btn"
+	"btn2";
+}
+/* all input media */
+.main .register .registerProfileName,
+.main .register .registerUsername,
+.main .register .registerPassword,
+.main .register .registerSecretKey{
+	width: 95vw;
+	padding: .5rem 0;
+}
+
+.main .register .loginShow{
+	width: 95vw;
+}
+
+}
+
+
+
+
+
+
